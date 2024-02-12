@@ -57,7 +57,7 @@
           <remote-as>65002</remote-as>
         </neighbor>
         <neighbor>
-          <id>10.0.11.2</id>
+          <id>10.0.20.2</id>
           <remote-as>65002</remote-as>
         </neighbor>
       </bgp>
