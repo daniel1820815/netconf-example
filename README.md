@@ -10,6 +10,8 @@ A simple Python script using [ncclient](https://ncclient.readthedocs.io/en/lates
 
 The XML payloads (configuration files) were created with the help of [Cisco YANG suite](https://developer.cisco.com/yangsuite/).
 
+The script including the XML payload was successfully tested in a Cisco Modeling Labs environment with two Cisco CAT8000V IOS-XE routers.
+
 ## Prerequisites
 
 - Two Cisco IOS-XE routers connected together on an interface
