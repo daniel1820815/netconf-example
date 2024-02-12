@@ -38,7 +38,7 @@ A simple Python script using ncclient library to connect to two Cisco IOS-XE rou
 
 4. Run the script:
 
-    Before running the Python script modify the IP addresses in the script and in the XML payload files respectively.
+    Before running the Python script modify the IP addresses in the script and in the XML payload files respectively according to your setup!
 
     ```bash
     python netconf-example.py
