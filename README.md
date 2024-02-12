@@ -1,6 +1,6 @@
-# NETCONF configuration example for Cisco IOS-XE routers
+# Simple NETCONF config example
 
-A simple Python script using ncclient library to connect to two Cisco IOS-XE routers and push the configuration using NETCONF. The following configuration will be applied:
+A simple Python script using ncclient library to connect to two Cisco IOS-XE routers and push configuration using NETCONF. The following configuration will be applied:
 
 - Enable interface between both Cisco IOS-XE routers
 - Create two subinterfaces using dot1q tagging
