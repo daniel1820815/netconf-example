@@ -52,6 +52,14 @@
     <router>
       <bgp xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-bgp">
         <id>65001</id>
+        <neighbor>
+          <id>10.0.10.2</id>
+          <remote-as>65002</remote-as>
+        </neighbor>
+        <neighbor>
+          <id>10.0.11.2</id>
+          <remote-as>65002</remote-as>
+        </neighbor>
       </bgp>
     </router>
   </native>
