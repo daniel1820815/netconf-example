@@ -25,17 +25,6 @@
           </address>
         </ip>
       </GigabitEthernet>
-      <Loopback>
-        <name>0</name>
-        <ip>
-          <address>
-            <primary>
-              <address>1.1.1.1</address>
-              <mask>255.255.255.255</mask>
-            </primary>
-          </address>
-        </ip>
-      </Loopback>
     </interface>
     <router>
       <bgp xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-bgp">
