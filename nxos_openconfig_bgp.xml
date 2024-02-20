@@ -17,15 +17,15 @@
           <bgp>
             <global>
               <config>
-                <as>65002</as>
-                <router-id>2.2.2.2</router-id>
+                <as>65003</as>
+                <router-id>3.3.3.3</router-id>
               </config>
             </global>
             <neighbors>
               <neighbor>
-                <neighbor-address>10.0.10.1</neighbor-address>
+                <neighbor-address>10.0.30.1</neighbor-address>
                 <config>
-                  <neighbor-address>10.0.10.1</neighbor-address>
+                  <neighbor-address>10.0.30.1</neighbor-address>
                   <peer-as>65001</peer-as>
                 </config>
                 <afi-safis>
@@ -43,9 +43,9 @@
                 </afi-safis>
               </neighbor>
               <neighbor>
-                <neighbor-address>10.0.20.2</neighbor-address>
+                <neighbor-address>10.0.40.2</neighbor-address>
                 <config>
-                  <neighbor-address>10.0.20.2</neighbor-address>
+                  <neighbor-address>10.0.40.2</neighbor-address>
                   <peer-as>65002</peer-as>
                 </config>
                 <afi-safis>
