@@ -48,29 +48,6 @@
         </subinterface>
       </subinterfaces>
     </interface>
-    <interface>
-      <name>Loopback0</name>
-      <config>
-        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:softwareLoopback</type>
-        <name>Loopback0</name>
-      </config>
-      <subinterfaces>
-        <subinterface>
-          <index>0</index>
-          <ipv4 xmlns="http://openconfig.net/yang/interfaces/ip">
-            <addresses>
-              <address>
-                <ip>2.2.2.2</ip>
-                <config>
-                  <ip>2.2.2.2</ip>
-                  <prefix-length>32</prefix-length>
-                </config>
-              </address>
-            </addresses>
-          </ipv4>
-        </subinterface>
-      </subinterfaces>
-    </interface>
   </interfaces>
   <network-instances xmlns="http://openconfig.net/yang/network-instance">
     <network-instance>
