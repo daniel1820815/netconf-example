@@ -25,6 +25,18 @@
           </address>
         </ip>
       </GigabitEthernet>
+      <GigabitEthernet>
+        <name>4</name>
+        <shutdown xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" nc:operation="remove"/>
+        <ip>
+          <address>
+            <primary>
+              <address>10.0.30.1</address>
+              <mask>255.255.255.0</mask>
+            </primary>
+          </address>
+        </ip>
+      </GigabitEthernet>
     </interface>
     <router>
       <bgp xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-bgp">
@@ -36,6 +48,10 @@
         <neighbor>
           <id>10.0.20.2</id>
           <remote-as>65002</remote-as>
+        </neighbor>
+        <neighbor>
+          <id>10.0.30.3</id>
+          <remote-as>65003</remote-as>
         </neighbor>
       </bgp>
     </router>

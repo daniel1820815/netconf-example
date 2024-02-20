@@ -48,6 +48,30 @@
         </subinterface>
       </subinterfaces>
     </interface>
+    <interface>
+      <name>GigabitEthernet4</name>
+      <config>
+        <name>GigabitEthernet4</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+        <enabled>true</enabled>
+      </config>
+      <subinterfaces>
+        <subinterface>
+          <index>0</index>
+          <ipv4 xmlns="http://openconfig.net/yang/interfaces/ip">
+            <addresses>
+              <address>
+                <ip>10.0.40.2</ip>
+                <config>
+                  <ip>10.0.40.2</ip>
+                  <prefix-length>24</prefix-length>
+                </config>
+              </address>
+            </addresses>
+          </ipv4>
+        </subinterface>
+      </subinterfaces>
+    </interface>
   </interfaces>
   <network-instances xmlns="http://openconfig.net/yang/network-instance">
     <network-instance>
@@ -90,22 +114,16 @@
               </neighbor>
               <neighbor>
                 <neighbor-address>10.0.20.1</neighbor-address>
-                <!-- <afi-safis>
-                  <afi-safi>
-                      <afi-safi-name xmlns:oc-bgp-types="http://openconfig.net/yang/bgp-types">oc-bgp-types:IPV4_UNICAST</afi-safi-name>
-                      <ipv4-unicast>
-                        <config>
-                          <send-default-route>false</send-default-route>
-                        </config>
-                      </ipv4-unicast>
-                      <config>
-                        <afi-safi-name xmlns:oc-bgp-types="http://openconfig.net/yang/bgp-types">oc-bgp-types:IPV4_UNICAST</afi-safi-name>
-                      </config>
-                  </afi-safi>
-                </afi-safis> -->
                 <config>
                   <neighbor-address>10.0.20.1</neighbor-address>
                   <peer-as>65001</peer-as>
+                </config>
+              </neighbor>
+              <neighbor>
+                <neighbor-address>10.0.40.3</neighbor-address>
+                <config>
+                  <neighbor-address>10.0.40.3</neighbor-address>
+                  <peer-as>65003</peer-as>
                 </config>
               </neighbor>
             </neighbors>
