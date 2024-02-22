@@ -27,11 +27,6 @@
                 <afi-safis>
                   <afi-safi>
                     <afi-safi-name xmlns:oc-bgp-types="http://openconfig.net/yang/bgp-types">oc-bgp-types:IPV4_UNICAST</afi-safi-name>
-                    <ipv4-unicast>
-                    <config>
-                      <send-default-route>false</send-default-route>
-                    </config>
-                    </ipv4-unicast>
                     <config>
                       <afi-safi-name xmlns:oc-bgp-types="http://openconfig.net/yang/bgp-types">oc-bgp-types:IPV4_UNICAST</afi-safi-name>
                     </config>
@@ -47,11 +42,6 @@
                 <afi-safis>
                   <afi-safi>
                     <afi-safi-name xmlns:oc-bgp-types="http://openconfig.net/yang/bgp-types">oc-bgp-types:IPV4_UNICAST</afi-safi-name>
-                    <ipv4-unicast>
-                    <config>
-                      <send-default-route>false</send-default-route>
-                    </config>
-                    </ipv4-unicast>
                     <config>
                       <afi-safi-name xmlns:oc-bgp-types="http://openconfig.net/yang/bgp-types">oc-bgp-types:IPV4_UNICAST</afi-safi-name>
                     </config>
