@@ -2,10 +2,6 @@
   <network-instances xmlns="http://openconfig.net/yang/network-instance">
     <network-instance>
       <name>default</name>
-      <config>
-        <type xmlns:oc-ni-types="http://openconfig.net/yang/network-instance-types">oc-ni-types:DEFAULT_INSTANCE</type>
-        <enabled-address-families xmlns:oc-types="http://openconfig.net/yang/openconfig-types">oc-types:IPV4</enabled-address-families>
-      </config>
       <protocols>
         <protocol>
           <name>bgp</name>
