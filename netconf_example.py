@@ -5,13 +5,13 @@ from ncclient import manager
 logging.basicConfig(level=logging.DEBUG)
 
 # List of devices IOSXE devices
-iosxe_devices = ["192.168.255.51", "192.168.255.52", "192.168.255.53"]
+devices = ["192.168.255.51", "192.168.255.52", "192.168.255.53"]
 
 # List of NX-OS device configurations
 nxos_configs = ["native_interfaces", "openconfig_interfaces", "openconfig_bgp"]
 
 # Loop through the devices and connect to it
-for device in iosxe_devices:
+for device in devices:
     router = manager.connect(
         host=device,
         username="expert",
