@@ -1,20 +1,18 @@
-# Simple NETCONF config example
+# NETCONF config example
 
-A simple Python script using [ncclient](https://ncclient.readthedocs.io/en/latest/) library to connect to two Cisco IOS-XE routers and push configuration using NETCONF. The following configuration will be applied:
+A simple Python script using [ncclient](https://ncclient.readthedocs.io/en/latest/) library to configure two Cisco IOS-XE routers and a NX-OS switch and push configuration using NETCONF. The following configuration will be applied:
 
-- Enable interface between both Cisco IOS-XE routers
-- Create two subinterfaces using dot1q tagging
-- Add IP addresses to both subinterfaces
-- Create a loopback interface
+- Enable interfaces
+- Add IP addresses to interfaces
 - Configure BGP process with neighbor statements
 
 The XML payloads (configuration files) were created with the help of [Cisco YANG suite](https://developer.cisco.com/yangsuite/).
 
-The script including the XML payload was successfully tested in a Cisco Modeling Labs environment with two Cisco CAT8000V IOS-XE routers.
+The script including the XML payload was successfully tested in a Cisco Modeling Labs environment using my [DevNet Expert lab setup](https://github.com/daniel1820815/devnet-expert-cml-lab).
 
 ## Prerequisites
 
-- Two Cisco IOS-XE routers connected together on an interface
+- Lab like my [DevNet Expert lab setup](https://github.com/daniel1820815/devnet-expert-cml-lab)
 - Management access to the Cisco IOS-XE routers and NETCONF enabled
 - Python ncclient library installed (see requirements.txt)
 
