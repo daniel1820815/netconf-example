@@ -1,0 +1,16 @@
+<config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <System xmlns="http://cisco.com/ns/yang/cisco-nx-os-device">
+    <intf-items>
+      <phys-items>
+        <PhysIf-list>
+          <id>eth1/1</id>
+          <layer>Layer3</layer>
+        </PhysIf-list>
+        <PhysIf-list>
+          <id>eth1/2</id>
+          <layer>Layer3</layer>
+        </PhysIf-list>
+      </phys-items>
+    </intf-items>
+  </System>
+</config>
