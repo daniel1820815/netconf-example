@@ -1,6 +1,6 @@
 bcrypt==4.1.2
 cffi==1.16.0
-cryptography==42.0.2
+cryptography==42.0.4
 lxml==5.1.0
 ncclient==0.6.15
 paramiko==3.4.0
