@@ -23,11 +23,11 @@ for device in devices:
     if device == "192.168.255.53":
         # Loop through the NXOS configs and apply it
         for config in nxos_configs:
-            with open(f"nxos_{config}.xml", encoding="utf-8") as file:
+            with open(f"configs/nxos_{config}.xml", encoding="utf-8") as file:
                 payload = file.read()
             router.edit_config(payload, target="running")
     # For all other devices
     else:
-        with open(f"{device}.xml", encoding="utf-8") as file:
+        with open(f"configs/{device}.xml", encoding="utf-8") as file:
             payload = file.read()
         router.edit_config(payload, target="running")
