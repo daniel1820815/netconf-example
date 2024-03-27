@@ -3,7 +3,7 @@
         <neighbors>
             <neighbor>
                 <neighbor-id/>
-                <session-state>fsm-established</session-state>
+                <session-state/>
             </neighbor>
         </neighbors>
     </bgp-state-data>

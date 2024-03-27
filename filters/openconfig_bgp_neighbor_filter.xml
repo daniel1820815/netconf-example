@@ -4,13 +4,12 @@
             <name>default</name>
             <protocols>
                 <protocol>
-                    <identifier xmlns:oc-pol-types="http://openconfig.net/yang/policy-types">oc-pol-types:BGP</identifier>
-                    <name>bgp</name>
                     <bgp>
                         <neighbors>
                             <neighbor>
+                                <neighbor-address/>
                                 <state>
-                                    <session-state>ESTABLISHED</session-state>
+                                    <session-state/>
                                 </state>
                             </neighbor>
                         </neighbors>

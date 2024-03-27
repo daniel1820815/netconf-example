@@ -1,4 +1,4 @@
-'''Python script to push XML configuration payload to devices via NETCONF'''
+'''Python script to validate configuration from XML payload via NETCONF'''
 from ncclient import manager
 from lxml import etree
 import xml.etree.ElementTree as ET
@@ -22,12 +22,14 @@ def device_connect(dev):
 def get_bgp_neighbors(con, filter):
     '''Function to get BGP neighbors based on filter and return data'''
 
+    # Get BGP neighbor state data
     response = con.get(filter=filter)
+
+    # Convert response data to XML string
     data = etree.tostring(
         response.data_ele,
         pretty_print=True
         ).decode()
-    # print(xml_data)
     return data
 
 
@@ -37,7 +39,7 @@ if __name__ == '__main__':
     for device in devices:
         connect = device_connect(device)
 
-        # Choose which filter to use
+        # Choose which filter and YANG model path to use
         if device == "192.168.255.53":
             yang_type = 'openconfig'
             url = '{http://openconfig.net/yang/network-instance}'
