@@ -1,6 +1,8 @@
 # NETCONF config example
 
-A simple Python script using [ncclient](https://ncclient.readthedocs.io/en/latest/) library to configure two Cisco IOS-XE routers and a NX-OS switch and push configuration using NETCONF. The following configuration will be applied:
+Two simple Python scripts using [ncclient](https://ncclient.readthedocs.io/en/latest/) library to push configuration to Cisco IOS-XE routers and a NX-OS switch and validate the configuration using NETCONF.
+
+The following configuration will be applied:
 
 - Enable interfaces
 - Add IP addresses to interfaces
@@ -38,10 +40,18 @@ The script including the XML payload was successfully tested in a Cisco Modeling
     pip install -r requirements.txt
     ```
 
-4. Run the script:
+4. Run the script for configuration:
 
     Before running the Python script modify the IP addresses in the script and in the XML payload files respectively according to your setup!
 
     ```bash
-    python netconf-example.py
+    python netconf_config.py
+    ```
+
+5. Run the script for validation:
+
+    Before running the Python script modify the IP addresses in the script and in the XML payload files respectively according to your setup!
+
+    ```bash
+    python netconf_validate.py
     ```

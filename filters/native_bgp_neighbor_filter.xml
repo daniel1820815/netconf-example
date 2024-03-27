@@ -1,0 +1,10 @@
+<filter xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <bgp-state-data xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-bgp-oper">
+        <neighbors>
+            <neighbor>
+                <neighbor-id/>
+                <session-state/>
+            </neighbor>
+        </neighbors>
+    </bgp-state-data>
+</filter>

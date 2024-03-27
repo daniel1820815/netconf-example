@@ -1,0 +1,21 @@
+<filter>
+    <network-instances xmlns="http://openconfig.net/yang/network-instance">
+        <network-instance>
+            <name>default</name>
+            <protocols>
+                <protocol>
+                    <bgp>
+                        <neighbors>
+                            <neighbor>
+                                <neighbor-address/>
+                                <state>
+                                    <session-state/>
+                                </state>
+                            </neighbor>
+                        </neighbors>
+                    </bgp>
+                </protocol>
+            </protocols>
+        </network-instance>
+    </network-instances>
+</filter>
