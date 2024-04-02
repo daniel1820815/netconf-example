@@ -12,6 +12,11 @@ The XML payloads (configuration files) were created with the help of [Cisco YANG
 
 The script including the XML payload was successfully tested in a Cisco Modeling Labs environment using my [DevNet Expert lab setup](https://github.com/daniel1820815/devnet-expert-cml-lab).
 
+## Related blog post
+
+- [NETCONF XML Payload with YANG models](https://blog.kuhlcloud.de/automation/python/2024/02/22/netconf-xml.html)
+- [Validate Configs using NETCONF + YANG](https://blog.kuhlcloud.de/automation/python/2024/03/27/netconf_validation.html)
+
 ## Prerequisites
 
 - Lab like my [DevNet Expert lab setup](https://github.com/daniel1820815/devnet-expert-cml-lab)
